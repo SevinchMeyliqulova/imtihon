@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #000000;
+    --secondary: #ffffff;
+    --stroke: #9E7F66;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    // box-sizing: content-box;
+    // padding: 0 50px;
+}
+
+
+main{
+    .reset{
+        .dishes{
+            height: 600px;
+            background-image:url('../images/tab-bg.jpg');
+            background-repeat: no-repeat;
+            // .conteinar{
+                .dine{
+                    margin-bottom: 153px;
+                }
+                .content{
+                    display: flex;
+                    justify-content: space-between;
+                    .tex_book{
+                        max-width: 445px;
+                        height: 188px;
+                        h1{
+                            color: #FFF;
+                            // font-family: League Spartan;
+                            font-size: 80px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 80px; /* 100% */
+                            letter-spacing: -1px;
+                        }
+                        p{
+                            color: #FFF;
+                            // font-family: League Spartan;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 30px; 
+                        }
+                    }
+                    .image-line-bottom {
+                        position: relative;
+                      }
+                      .image-line-bottom::before {
+                        display: block;
+                        width: 160px;
+                        height: 76px;
+                        background-image: url(../img/img-line.svg);
+                        content: "";
+                        position: absolute;
+                        bottom: -36px;
+                        left: -90px;
+                        z-index: -1;
+                      }
+                    form{
+                        padding: 48px;
+                        background: #FFF;
+                        // box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.50);
+                        width: 540px;
+                        div{
+                            margin-bottom: 34px;
+                        }
+                        label {
+                            display: block;
+                            margin-top: 25px;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        input {
+                            border :none;
+                            Outline: none;
+                            border-bottom: 1px solid black;
+                            width: 444px;
+                            height: 43px;
+                            // margin-top: 15px;
+                            padding: 5px 34px;
+                            background: #fff;
+                            color: #353535;
+                            font-size: 22px;
+                        }
+                        input::placeholder{
+                            opacity: 0.5;
+                        }
+                        .error {
+                            input{
+                                color: #B54949;
+                                border-color: #B54949;
+                            }
+                            .error input::placeholder{
+                                color: #B54949;
+                            }
+                            .error .error-el{
+                                color: #B54949;
+                                margin-top: 1px;
+                                text-align: left;
+                                font-size: 10px;
+                            }
+                            
+                        } 
+                        .date{
+                            width: 444px;
+                            height: 43px;
+                            display: flex;
+                            justify-content: space-between;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                                -ms-flex-pack: justify;
+                                    justify-content: space-between;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            color: #111111;
+                            span{
+                                width: 90px;
+                                height: 28px;
+                            }
+                            .data-select {
+                                display: flex;
+                                column-gap: 15px;
+                                input{
+                                    border :none;
+                                    Outline: none;
+                                    border-bottom: 1px solid black;
+                                    width: 80px;
+                                    height: 43px;
+                                }
+                            }
+                        }
+                        .date > div:last-child select{
+                            text-transform: uppercase;
+                        }
+                        .time{
+                            // width: 444px;
+                            height: 43px;
+                            display: flex;
+                            justify-content: space-between;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                                -ms-flex-pack: justify;
+                                    justify-content: space-between;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            color: #111111;
+                            span{
+                                width: 89px;
+                                height: 28px;
+                            }
+                            .time-select{
+                                display: flex;
+                                gap: 16px;
+                                // width: 80px;
+                                // height: 43px;
+                                input{
+                                    border :none;
+                                    Outline: none;
+                                    border-bottom: 1px solid black;
+                                    width: 80px;
+                                    height: 43px;
+                                }
+        
+                            }
+                        }
+                        .time > div:last-child select{
+                            text-transform: uppercase;
+                        }
+                        .counter{
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                                -ms-flex-pack: justify;
+                                    justify-content: space-between;
+                            font-weight: 700;
+                            span{
+                                color: #111111;
+                            }
+                            .error span{
+                                color: #B54949;
+                            }
+                            button{
+                                padding: 0;
+                                font-weight: 700;
+                                color: #9E7F66;
+                                background:var(--secondary);
+                                border:none;
+                            }
+                        }
+                        .btn{
+                            padding: 25px 55px 23px 54px;
+                            border: 1px solid #FFF;
+                            letter-spacing: 2.5px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            color: #FFF;
+                        }
+                        .btn:hover {
+                            background-color: #FFFFFF;
+                            color: #111;
+                          }
+                          
+                        .btn-dark {
+                            border-color: #111111;
+                            background-color: #111111;
+                          }
+                        .btn-dark:hover {
+                            border: 1px solid #111;
+                          }
+                          .image-line-bottom {
+                            position: relative;
+                          }
+                          .image-line-bottom::before {
+                            display: block;
+                            width: 160px;
+                            height: 76px;
+                            background-image: url(../img/img-line.svg);
+                            content: "";
+                            position: absolute;
+                            bottom: -36px;
+                            left: -90px;
+                            z-index: -1;
+                          }
+                          .image-line-right {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                          }
+                          .image-line-right .img-line {
+                            -webkit-transform: translate(625px, -35px);
+                                    transform: translate(625px, -35px);
+                          }
+                          
+                          .img-line {
+                            display: block;
+                            width: 160px;
+                            height: 76px;
+                            background-image: url(../img/img-line.svg);
+                          }  
+                    }
+                }
+        }
+
+    }
+}
+.bg-img{
+   width: 100%;
+   height: 320px;
+   background-color:#FFF;
+}
+.footer {
+    background-color: #111111;
+    padding: 80px 0 76px 0;
+    .footer__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+                gap: 10px;
+                .logo{
+                    -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+                }
+                div:last-child{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -ms-flex-wrap: wrap;
+                        flex-wrap: wrap;
+                    gap: 10px;
+                    -webkit-box-flex: 1;
+                        -ms-flex-positive: 1;
+                            flex-grow: 1;
+                }
+                    div:last-child ul,div:last-child div{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        line-height: 28px;
+                        letter-spacing: 2px;
+                    }
+                    .div{
+                        ul{
+                            li{
+                                    color: #FFF;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 28px; 
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                            }
+                        }
+                    }
+        div{
+           ul{
+            li{
+                color: #FFF;
+                // font-family: League Spartan;
+                font-size: 14px;
+                // font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 200% */
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+           }
+        }
+      }
+}
